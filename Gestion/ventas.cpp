@@ -143,7 +143,7 @@ void Ventas::actualizarDatos(){
     this->ui->comboProductos->clear();
     this->ui->comboModelo->clear();
 
-    QSqlQuery query("select producto from stock");
+    QSqlQuery query("select distinct(producto) from stock");
     while(query.next()){
         this->ui->comboProductos->addItem(query.value(0).toString());
     }
@@ -192,9 +192,9 @@ void Ventas::actualizarDatos(){
     resultado = efectivo - gasto;
     this->ui->textActual->setText(QString::number( resultado ));
 
-    this->ui->comboProductos->clearEditText();
-    this->ui->comboModelo->clearEditText();
-    this->ui->textCodigo->clear();
+    //this->ui->comboProductos->clearEditText();
+    //this->ui->comboModelo->clearEditText();
+    //this->ui->textCodigo->clear();
 
     QString consu;
     consu.append("SELECT producto, cantidad, hard, serv, efectivo, tarjeta, ctecta, gastos, motivo FROM venta where nrocaja=");
@@ -337,10 +337,9 @@ void Ventas::cerrarVenta(){
 }
 
 void Ventas::agregarCombo(QSqlQuery query){
-    //query.first();
     this->ui->comboModelo->clear();
     while(query.next()){
-        this->ui->comboModelo->addItem(query.value(3).toString());
+        this->ui->comboModelo->addItem(query.value(0).toString());
     }
 
 }
@@ -356,14 +355,16 @@ void Ventas::textModelo(QString modelo){
         this->ui->comboProductos->setEditText(query.value(1).toString());
         this->tipo = query.value(2).toBool();
         this->ui->comboModelo->setEditText(query.value(3).toString());
-        this->ui->textCodigoBarra->setText(query.value(4).toString());
+        qDebug() << query.value(4).toString();
+        this->ui->textCodigo->setText(query.value(4).toString());
     }
+
 }
 void Ventas::textCodigo(QString codigo){
     QString a;
     a.append("select precio,producto,tipo,modelo from stock where codigobarra like '");
     a.append(codigo);
-    a.append("'");
+    a.append("%'");
 
     QSqlQuery query(a);
     while(query.next()){
@@ -375,18 +376,11 @@ void Ventas::textCodigo(QString codigo){
 }
 void Ventas::textProducto(QString producto){
     QString a;
-    a.append("select precio,codigobarra,tipo,modelo from stock where producto like '");
+    a.append("select modelo from stock where producto like '");
     a.append(producto);
-    a.append("%'");
-
+    a.append("'");
     QSqlQuery query(a);
-    //while(query.next()){
-        //this->ui->textPrecio->setText(query.value(0).toString());
-        //this->ui->textCodigo->setText(query.value(1).toString());
-      //  this->tipo = query.value(2).toBool();
-        //this->ui->comboModelo->setEditText(query.value(3).toString());
-        //}
-    //this->textPrecio(this->ui->textPrecio->text());
+
     this->agregarCombo(query);
 }
 void Ventas::textPrecio(QString precio){

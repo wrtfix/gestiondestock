@@ -96,7 +96,7 @@
           <x>0</x>
           <y>0</y>
           <width>952</width>
-          <height>343</height>
+          <height>575</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_3">
@@ -571,8 +571,8 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>256</width>
-          <height>191</height>
+          <width>274</width>
+          <height>222</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_7">
@@ -765,7 +765,7 @@
           <x>0</x>
           <y>0</y>
           <width>516</width>
-          <height>430</height>
+          <height>198</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_10">
@@ -818,8 +818,8 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>315</width>
-          <height>430</height>
+          <width>297</width>
+          <height>237</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_12">
@@ -887,7 +887,7 @@
     <string>&amp;Salir</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+X</string>
+    <string>Alt+X</string>
    </property>
   </action>
   <action name="actionAlta">
@@ -895,7 +895,7 @@
     <string>&amp;Alta de Stock</string>
    </property>
    <property name="shortcut">
-    <string>Alt+S</string>
+    <string>Alt+2</string>
    </property>
   </action>
   <action name="actionModificacion">
@@ -903,7 +903,7 @@
     <string>M&amp;odificacion de Stock</string>
    </property>
    <property name="shortcut">
-    <string>Alt+O</string>
+    <string>Alt+3</string>
    </property>
   </action>
   <action name="actionVentas">
@@ -911,7 +911,7 @@
     <string>&amp;Ventas</string>
    </property>
    <property name="shortcut">
-    <string>Alt+V</string>
+    <string>Alt+4</string>
    </property>
   </action>
   <action name="actionNuevo">
@@ -919,7 +919,7 @@
     <string>&amp;Nuevo Cliente</string>
    </property>
    <property name="shortcut">
-    <string>Alt+N</string>
+    <string>Alt+5</string>
    </property>
   </action>
   <action name="actionEstado_de_Cuenta">
@@ -927,7 +927,7 @@
     <string>&amp;Estado de Cuenta</string>
    </property>
    <property name="shortcut">
-    <string>Alt+T</string>
+    <string>Alt+6</string>
    </property>
   </action>
   <action name="action_Acerca_de">
@@ -935,7 +935,7 @@
     <string>&amp;Acerca de..</string>
    </property>
    <property name="shortcut">
-    <string>Alt+Y</string>
+    <string>Alt+7</string>
    </property>
   </action>
   <action name="action_Modificar">
@@ -943,7 +943,7 @@
     <string>&amp;Modificar Cliente</string>
    </property>
    <property name="shortcut">
-    <string>Alt+Z</string>
+    <string>Alt+8</string>
    </property>
   </action>
  </widget>
@@ -1120,13 +1120,13 @@
   </connection>
   <connection>
    <sender>comboModelo</sender>
-   <signal>activated(QString)</signal>
+   <signal>editTextChanged(QString)</signal>
    <receiver>Ventas</receiver>
    <slot>textModelo(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>292</x>
-     <y>458</y>
+     <x>369</x>
+     <y>461</y>
     </hint>
     <hint type="destinationlabel">
      <x>333</x>
@@ -1136,13 +1136,13 @@
   </connection>
   <connection>
    <sender>textCodigo</sender>
-   <signal>textChanged(QString)</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>Ventas</receiver>
    <slot>textCodigo(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>107</x>
-     <y>457</y>
+     <y>460</y>
     </hint>
     <hint type="destinationlabel">
      <x>-11</x>
@@ -1152,13 +1152,13 @@
   </connection>
   <connection>
    <sender>comboProductos</sender>
-   <signal>activated(QString)</signal>
+   <signal>editTextChanged(QString)</signal>
    <receiver>Ventas</receiver>
    <slot>textProducto(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>422</x>
-     <y>458</y>
+     <x>362</x>
+     <y>461</y>
     </hint>
     <hint type="destinationlabel">
      <x>475</x>
@@ -1174,7 +1174,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>499</x>
-     <y>457</y>
+     <y>460</y>
     </hint>
     <hint type="destinationlabel">
      <x>523</x>
@@ -1190,7 +1190,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>1268</x>
-     <y>821</y>
+     <y>824</y>
     </hint>
     <hint type="destinationlabel">
      <x>1345</x>
@@ -1222,7 +1222,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>1286</x>
-     <y>738</y>
+     <y>739</y>
     </hint>
     <hint type="destinationlabel">
      <x>914</x>
@@ -1241,8 +1241,8 @@
      <y>-1</y>
     </hint>
     <hint type="destinationlabel">
-     <x>481</x>
-     <y>136</y>
+     <x>423</x>
+     <y>161</y>
     </hint>
    </hints>
   </connection>
@@ -1285,8 +1285,8 @@
    <slot>guardarCliente()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>848</x>
-     <y>245</y>
+     <x>946</x>
+     <y>248</y>
     </hint>
     <hint type="destinationlabel">
      <x>578</x>
@@ -1349,8 +1349,8 @@
    <slot>textEstado(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>967</x>
-     <y>110</y>
+     <x>1269</x>
+     <y>119</y>
     </hint>
     <hint type="destinationlabel">
      <x>903</x>

@@ -61,7 +61,7 @@
   <valuemap type="QVariantMap" >
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList" >
-    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-lbVAm9uXeT,guid=db9be9cc6e2c71735c0215274b8302b2</value>
+    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-3wHfiog5Q8,guid=bfa60cca0ced486b9769aeda4b86ce56</value>
     <value type="QString" >DESKTOP_SESSION=gnome</value>
     <value type="QString" >DESKTOP_STARTUP_ID=</value>
     <value type="QString" >DISPLAY=:0.0</value>
@@ -69,8 +69,8 @@
     <value type="QString" >GDM_KEYBOARD_LAYOUT=latam</value>
     <value type="QString" >GDM_LANG=es_AR.UTF-8</value>
     <value type="QString" >GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString" >GNOME_KEYRING_PID=2141</value>
-    <value type="QString" >GNOME_KEYRING_SOCKET=/tmp/keyring-mlz09l/socket</value>
+    <value type="QString" >GNOME_KEYRING_PID=2140</value>
+    <value type="QString" >GNOME_KEYRING_SOCKET=/tmp/keyring-VgvPgi/socket</value>
     <value type="QString" >GTK_MODULES=canberra-gtk-module</value>
     <value type="QString" >GTK_RC_FILES=/etc/gtk/gtkrc:/home/wrtfix/.gtkrc-1.2-gnome2</value>
     <value type="QString" >HOME=/home/wrtfix</value>
@@ -81,16 +81,16 @@
     <value type="QString" >PATH=/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
     <value type="QString" >PWD=/home/wrtfix</value>
     <value type="QString" >QTDIR=/usr</value>
-    <value type="QString" >SESSION_MANAGER=local/wrtfix64:@/tmp/.ICE-unix/2156,unix/wrtfix64:/tmp/.ICE-unix/2156</value>
+    <value type="QString" >SESSION_MANAGER=local/wrtfix64:@/tmp/.ICE-unix/2155,unix/wrtfix64:/tmp/.ICE-unix/2155</value>
     <value type="QString" >SHELL=/bin/bash</value>
     <value type="QString" >SPEECHD_PORT=7560</value>
-    <value type="QString" >SSH_AGENT_PID=2198</value>
-    <value type="QString" >SSH_AUTH_SOCK=/tmp/keyring-mlz09l/socket.ssh</value>
+    <value type="QString" >SSH_AGENT_PID=2197</value>
+    <value type="QString" >SSH_AUTH_SOCK=/tmp/keyring-VgvPgi/socket.ssh</value>
     <value type="QString" >USER=wrtfix</value>
     <value type="QString" >USERNAME=wrtfix</value>
-    <value type="QString" >XAUTHORITY=/var/run/gdm/auth-for-wrtfix-37PZlC/database</value>
+    <value type="QString" >XAUTHORITY=/var/run/gdm/auth-for-wrtfix-vvCBq9/database</value>
     <value type="QString" >XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
-    <value type="QString" >XDG_SESSION_COOKIE=b30bb596cb9ad6e7104b4ad34af20855-1266877105.192910-1785150861</value>
+    <value type="QString" >XDG_SESSION_COOKIE=b30bb596cb9ad6e7104b4ad34af20855-1267125845.138641-1079458393</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList" >
     <value type="QString" >/home/wrtfix/Demo Reload/Gestion/Gestion.pro</value>
@@ -100,7 +100,7 @@
     <value type="QString" >CONFIG+=debug</value>
    </valuelist>
    <value key="abstractProcess.command" type="QString" >/usr/bin/qmake-qt4</value>
-   <value key="abstractProcess.enabled" type="bool" >false</value>
+   <value key="abstractProcess.enabled" type="bool" >true</value>
    <value key="abstractProcess.workingDirectory" type="QString" >/home/wrtfix/Demo Reload/Gestion</value>
    <value key="buildConfiguration" type="int" >2</value>
   </valuemap>
@@ -110,7 +110,7 @@
   <valuemap type="QVariantMap" >
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList" >
-    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-lbVAm9uXeT,guid=db9be9cc6e2c71735c0215274b8302b2</value>
+    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-3wHfiog5Q8,guid=bfa60cca0ced486b9769aeda4b86ce56</value>
     <value type="QString" >DESKTOP_SESSION=gnome</value>
     <value type="QString" >DESKTOP_STARTUP_ID=</value>
     <value type="QString" >DISPLAY=:0.0</value>
@@ -118,8 +118,8 @@
     <value type="QString" >GDM_KEYBOARD_LAYOUT=latam</value>
     <value type="QString" >GDM_LANG=es_AR.UTF-8</value>
     <value type="QString" >GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString" >GNOME_KEYRING_PID=2141</value>
-    <value type="QString" >GNOME_KEYRING_SOCKET=/tmp/keyring-mlz09l/socket</value>
+    <value type="QString" >GNOME_KEYRING_PID=2140</value>
+    <value type="QString" >GNOME_KEYRING_SOCKET=/tmp/keyring-VgvPgi/socket</value>
     <value type="QString" >GTK_MODULES=canberra-gtk-module</value>
     <value type="QString" >GTK_RC_FILES=/etc/gtk/gtkrc:/home/wrtfix/.gtkrc-1.2-gnome2</value>
     <value type="QString" >HOME=/home/wrtfix</value>
@@ -130,16 +130,16 @@
     <value type="QString" >PATH=/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
     <value type="QString" >PWD=/home/wrtfix</value>
     <value type="QString" >QTDIR=/usr</value>
-    <value type="QString" >SESSION_MANAGER=local/wrtfix64:@/tmp/.ICE-unix/2156,unix/wrtfix64:/tmp/.ICE-unix/2156</value>
+    <value type="QString" >SESSION_MANAGER=local/wrtfix64:@/tmp/.ICE-unix/2155,unix/wrtfix64:/tmp/.ICE-unix/2155</value>
     <value type="QString" >SHELL=/bin/bash</value>
     <value type="QString" >SPEECHD_PORT=7560</value>
-    <value type="QString" >SSH_AGENT_PID=2198</value>
-    <value type="QString" >SSH_AUTH_SOCK=/tmp/keyring-mlz09l/socket.ssh</value>
+    <value type="QString" >SSH_AGENT_PID=2197</value>
+    <value type="QString" >SSH_AUTH_SOCK=/tmp/keyring-VgvPgi/socket.ssh</value>
     <value type="QString" >USER=wrtfix</value>
     <value type="QString" >USERNAME=wrtfix</value>
-    <value type="QString" >XAUTHORITY=/var/run/gdm/auth-for-wrtfix-37PZlC/database</value>
+    <value type="QString" >XAUTHORITY=/var/run/gdm/auth-for-wrtfix-vvCBq9/database</value>
     <value type="QString" >XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
-    <value type="QString" >XDG_SESSION_COOKIE=b30bb596cb9ad6e7104b4ad34af20855-1266877105.192910-1785150861</value>
+    <value type="QString" >XDG_SESSION_COOKIE=b30bb596cb9ad6e7104b4ad34af20855-1267125845.138641-1079458393</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList" >
     <value type="QString" >-w</value>
