@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'ventas.ui'
 **
-** Created: Thu Feb 25 17:07:44 2010
+** Created: Thu Feb 25 19:42:24 2010
 **      by: Qt User Interface Compiler version 4.5.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -94,6 +94,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QPushButton *botonAgregar;
     QPushButton *botonGuardar;
+    QPushButton *pushButton_5;
     QPushButton *botonCerrarCaja;
     QComboBox *comboProductos;
     QLabel *label;
@@ -243,7 +244,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 952, 575));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1043, 575));
         gridLayout_3 = new QGridLayout(scrollAreaWidgetContents);
         gridLayout_3->setSpacing(6);
         gridLayout_3->setMargin(11);
@@ -431,6 +432,11 @@ public:
         botonGuardar->setEnabled(true);
 
         horizontalLayout->addWidget(botonGuardar);
+
+        pushButton_5 = new QPushButton(scrollAreaWidgetContents);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+
+        horizontalLayout->addWidget(pushButton_5);
 
 
         gridLayout_3->addLayout(horizontalLayout, 8, 1, 1, 1);
@@ -952,6 +958,7 @@ public:
         QObject::connect(action_Modificar, SIGNAL(triggered()), modificarCliente, SLOT(show()));
         QObject::connect(actionEstado_de_Cuenta, SIGNAL(triggered()), estadoCtecta, SLOT(show()));
         QObject::connect(comboEstado, SIGNAL(activated(QString)), Ventas, SLOT(textEstado(QString)));
+        QObject::connect(pushButton_5, SIGNAL(clicked()), Ventas, SLOT(borrarTexto()));
 
         QMetaObject::connectSlotsByName(Ventas);
     } // setupUi
@@ -960,7 +967,7 @@ public:
     {
         Ventas->setWindowTitle(QApplication::translate("Ventas", "Gestion de Demo Computacion", 0, QApplication::UnicodeUTF8));
         actionSalir->setText(QApplication::translate("Ventas", "&Salir", 0, QApplication::UnicodeUTF8));
-        actionSalir->setShortcut(QApplication::translate("Ventas", "Alt+X", 0, QApplication::UnicodeUTF8));
+        actionSalir->setShortcut(QApplication::translate("Ventas", "Ctrl+X", 0, QApplication::UnicodeUTF8));
         actionAlta->setText(QApplication::translate("Ventas", "&Alta de Stock", 0, QApplication::UnicodeUTF8));
         actionAlta->setShortcut(QApplication::translate("Ventas", "Alt+2", 0, QApplication::UnicodeUTF8));
         actionModificacion->setText(QApplication::translate("Ventas", "M&odificacion de Stock", 0, QApplication::UnicodeUTF8));
@@ -1004,6 +1011,7 @@ public:
         textGasto->setText(QApplication::translate("Ventas", "0", 0, QApplication::UnicodeUTF8));
         botonAgregar->setText(QApplication::translate("Ventas", "Agregar", 0, QApplication::UnicodeUTF8));
         botonGuardar->setText(QApplication::translate("Ventas", "Guardar Tabla", 0, QApplication::UnicodeUTF8));
+        pushButton_5->setText(QApplication::translate("Ventas", "Borrar", 0, QApplication::UnicodeUTF8));
         botonCerrarCaja->setText(QApplication::translate("Ventas", "Cerrar Caja", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("Ventas", "Seleccione Producto", 0, QApplication::UnicodeUTF8));
         AltadeStock->setWindowTitle(QApplication::translate("Ventas", "Alta de Stock", 0, QApplication::UnicodeUTF8));

@@ -95,7 +95,7 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>952</width>
+          <width>1043</width>
           <height>575</height>
          </rect>
         </property>
@@ -360,6 +360,13 @@
              </property>
              <property name="text">
               <string>Guardar Tabla</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="text">
+              <string>Borrar</string>
              </property>
             </widget>
            </item>
@@ -887,7 +894,7 @@
     <string>&amp;Salir</string>
    </property>
    <property name="shortcut">
-    <string>Alt+X</string>
+    <string>Ctrl+X</string>
    </property>
   </action>
   <action name="actionAlta">
@@ -1093,7 +1100,7 @@
    <slot>cerrarVenta()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>944</x>
+     <x>1035</x>
      <y>873</y>
     </hint>
     <hint type="destinationlabel">
@@ -1125,7 +1132,7 @@
    <slot>textModelo(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>369</x>
+     <x>460</x>
      <y>461</y>
     </hint>
     <hint type="destinationlabel">
@@ -1173,7 +1180,7 @@
    <slot>textPrecio(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>499</x>
+     <x>590</x>
      <y>460</y>
     </hint>
     <hint type="destinationlabel">
@@ -1257,8 +1264,8 @@
      <y>126</y>
     </hint>
     <hint type="destinationlabel">
-     <x>221</x>
-     <y>-17</y>
+     <x>653</x>
+     <y>467</y>
     </hint>
    </hints>
   </connection>
@@ -1358,6 +1365,22 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>Ventas</receiver>
+   <slot>borrarTexto()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>868</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>813</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>guardarVentas()</slot>
@@ -1375,5 +1398,6 @@
   <slot>guardarCliente()</slot>
   <slot>textCliente(QString)</slot>
   <slot>textEstado(QString)</slot>
+  <slot>borrarTexto()</slot>
  </slots>
 </ui>

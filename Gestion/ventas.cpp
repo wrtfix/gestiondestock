@@ -71,7 +71,7 @@ bool Ventas::verificarValores(){
             else{
                 if (ctecta>0){
                     this->ui->Cliente->show();
-                    QMessageBox::critical(this,"Error","Ingrese el cliente con Cuenta Corriente");
+                    QMessageBox::warning(this,"Error","Ingrese el cliente con Cuenta Corriente");
                     this->ui->Venta->setEnabled(false);
                     this->ui->agregarCtaCte->setEnabled(true);
                 }
@@ -118,21 +118,7 @@ void Ventas::agregarVenta(){
 
     if (this->verificarValores()){
         QSqlQuery query(a);
-        this->ui->textCantidad->setText("1");
-        this->ui->textCuentaCorriente->setText("0");
-        this->ui->textEfectivo->setText("0");
-        this->ui->textGasto->setText("0");
-        this->ui->textHard->setText("0");
-        this->ui->textMotivo->clear();
-        this->ui->textPrecio->setText("0");
-        this->ui->textServicioTecnico->setText("0");
-        this->ui->textTarjeta->setText("0");
-        this->ui->comboProductos->clearEditText();
-        this->ui->comboModelo->clearEditText();
-        this->ui->textCodigo->clear();
-        this->ui->checkCuenta->setChecked(false);
-        this->ui->tableView->show();
-        this->actualizarDatos();
+
     }else
         QMessageBox::critical(this,"Error","Verifique los valores ingresados");
 
@@ -430,7 +416,7 @@ void Ventas::agregarProducto(){
     this->ui->textMaximo->clear();
     this->ui->textProveedor->clear();
     this->ui->textDolar->clear();
-    this->actualizarDatos();
+ //   this->actualizarDatos();
 }
 
 void Ventas::guardarProducto(){
@@ -455,8 +441,16 @@ void Ventas::buscarProducto(QString nombre){
 void Ventas::agregarCuenta(){
     this->ui->Venta->setEnabled(true);
     QString a;
+    a.append("INSERT INTO `ctacte` (nombre,debe,haber) values ('");
+    a.append(this->ui->comboCliente->currentText());
+    a.append("',");
+    a.append(this->ui->textCuentaCorriente->text());
+    a.append(",");
+    a.append(this->ui->textEfectivo->text());
+    a.append(")");
+    qDebug()<< a;
+    QSqlQuery q(a);
 
-    QSqlQuery q("INSERT INTO `ctacte` (nombre,debe,haber) values ('"+this->ui->comboCliente->currentText()+"',"+this->ui->textCuentaCorriente->text()+","+this->ui->textEfectivo->text()+")");
     this->ui->agregarCtaCte->setEnabled(false);
 }
 void Ventas::agregarCliente(){
@@ -522,6 +516,23 @@ void Ventas::textEstado(QString cliente){
     this->ui->estadoHaber->setText(QString::number( haber ));
     this->ui->estadoTotal->setText(QString::number( res ));
 
+}
+void Ventas::borrarTexto(){
+        this->ui->textCantidad->setText("1");
+        this->ui->textCuentaCorriente->setText("0");
+        this->ui->textEfectivo->setText("0");
+        this->ui->textGasto->setText("0");
+        this->ui->textHard->setText("0");
+        this->ui->textMotivo->clear();
+        this->ui->textPrecio->setText("0");
+        this->ui->textServicioTecnico->setText("0");
+        this->ui->textTarjeta->setText("0");
+        this->ui->comboProductos->clearEditText();
+        this->ui->comboModelo->clearEditText();
+        this->ui->textCodigo->clear();
+        this->ui->checkCuenta->setChecked(false);
+        this->ui->tableView->show();
+        this->actualizarDatos();
 }
 Ventas::~Ventas()
 {

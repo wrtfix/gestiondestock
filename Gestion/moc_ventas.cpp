@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'ventas.h'
 **
-** Created: Fri Feb 19 16:52:46 2010
+** Created: Thu Feb 25 19:42:30 2010
 **      by: The Qt Meta Object Compiler version 61 (Qt 4.5.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_Ventas[] = {
        2,       // revision
        0,       // classname
        0,    0, // classinfo
-      16,   12, // methods
+      17,   12, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -44,7 +44,8 @@ static const uint qt_meta_data_Ventas[] = {
      235,    7,    7,    7, 0x0a,
      252,    7,    7,    7, 0x0a,
      273,    7,    7,    7, 0x0a,
-     293,    7,    7,    7, 0x08,
+     293,    7,    7,    7, 0x0a,
+     307,    7,    7,    7, 0x08,
 
        0        // eod
 };
@@ -58,7 +59,7 @@ static const char qt_meta_stringdata_Ventas[] = {
     "buscarProducto(QString)\0agregarCuenta()\0"
     "agregarCliente()\0guardarCliente()\0"
     "textCliente(QString)\0textEstado(QString)\0"
-    "on_action_Acerca_de_triggered()\0"
+    "borrarTexto()\0on_action_Acerca_de_triggered()\0"
 };
 
 const QMetaObject Ventas::staticMetaObject = {
@@ -101,10 +102,11 @@ int Ventas::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 12: guardarCliente(); break;
         case 13: textCliente((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 14: textEstado((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 15: on_action_Acerca_de_triggered(); break;
+        case 15: borrarTexto(); break;
+        case 16: on_action_Acerca_de_triggered(); break;
         default: ;
         }
-        _id -= 16;
+        _id -= 17;
     }
     return _id;
 }
