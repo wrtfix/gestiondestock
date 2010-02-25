@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'ventas.ui'
 **
-** Created: Mon Feb 22 19:32:50 2010
+** Created: Thu Feb 25 17:07:44 2010
 **      by: Qt User Interface Compiler version 4.5.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -243,7 +243,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 952, 343));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 952, 575));
         gridLayout_3 = new QGridLayout(scrollAreaWidgetContents);
         gridLayout_3->setSpacing(6);
         gridLayout_3->setMargin(11);
@@ -601,7 +601,7 @@ public:
         scrollArea_3->setWidgetResizable(true);
         scrollAreaWidgetContents_3 = new QWidget();
         scrollAreaWidgetContents_3->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_3"));
-        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 256, 191));
+        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 274, 222));
         gridLayout_7 = new QGridLayout(scrollAreaWidgetContents_3);
         gridLayout_7->setSpacing(6);
         gridLayout_7->setMargin(11);
@@ -769,7 +769,7 @@ public:
         scrollArea_5->setWidgetResizable(true);
         scrollAreaWidgetContents_5 = new QWidget();
         scrollAreaWidgetContents_5->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_5"));
-        scrollAreaWidgetContents_5->setGeometry(QRect(0, 0, 516, 430));
+        scrollAreaWidgetContents_5->setGeometry(QRect(0, 0, 516, 198));
         gridLayout_10 = new QGridLayout(scrollAreaWidgetContents_5);
         gridLayout_10->setSpacing(6);
         gridLayout_10->setMargin(11);
@@ -814,7 +814,7 @@ public:
         scrollArea_6->setWidgetResizable(true);
         scrollAreaWidgetContents_6 = new QWidget();
         scrollAreaWidgetContents_6->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_6"));
-        scrollAreaWidgetContents_6->setGeometry(QRect(0, 0, 315, 430));
+        scrollAreaWidgetContents_6->setGeometry(QRect(0, 0, 297, 237));
         gridLayout_12 = new QGridLayout(scrollAreaWidgetContents_6);
         gridLayout_12->setSpacing(6);
         gridLayout_12->setMargin(11);
@@ -937,9 +937,9 @@ public:
         QObject::connect(botonAgregar, SIGNAL(clicked()), Ventas, SLOT(agregarVenta()));
         QObject::connect(botonCerrarCaja, SIGNAL(clicked()), Ventas, SLOT(cerrarVenta()));
         QObject::connect(actionModificacion, SIGNAL(triggered()), ModificarStock, SLOT(show()));
-        QObject::connect(comboModelo, SIGNAL(activated(QString)), Ventas, SLOT(textModelo(QString)));
-        QObject::connect(textCodigo, SIGNAL(textChanged(QString)), Ventas, SLOT(textCodigo(QString)));
-        QObject::connect(comboProductos, SIGNAL(activated(QString)), Ventas, SLOT(textProducto(QString)));
+        QObject::connect(comboModelo, SIGNAL(editTextChanged(QString)), Ventas, SLOT(textModelo(QString)));
+        QObject::connect(textCodigo, SIGNAL(textEdited(QString)), Ventas, SLOT(textCodigo(QString)));
+        QObject::connect(comboProductos, SIGNAL(editTextChanged(QString)), Ventas, SLOT(textProducto(QString)));
         QObject::connect(textPrecio, SIGNAL(textChanged(QString)), Ventas, SLOT(textPrecio(QString)));
         QObject::connect(pushButton, SIGNAL(clicked()), Ventas, SLOT(agregarProducto()));
         QObject::connect(pushButton_3, SIGNAL(clicked()), Ventas, SLOT(guardarProducto()));
@@ -960,21 +960,21 @@ public:
     {
         Ventas->setWindowTitle(QApplication::translate("Ventas", "Gestion de Demo Computacion", 0, QApplication::UnicodeUTF8));
         actionSalir->setText(QApplication::translate("Ventas", "&Salir", 0, QApplication::UnicodeUTF8));
-        actionSalir->setShortcut(QApplication::translate("Ventas", "Ctrl+X", 0, QApplication::UnicodeUTF8));
+        actionSalir->setShortcut(QApplication::translate("Ventas", "Alt+X", 0, QApplication::UnicodeUTF8));
         actionAlta->setText(QApplication::translate("Ventas", "&Alta de Stock", 0, QApplication::UnicodeUTF8));
-        actionAlta->setShortcut(QApplication::translate("Ventas", "Alt+S", 0, QApplication::UnicodeUTF8));
+        actionAlta->setShortcut(QApplication::translate("Ventas", "Alt+2", 0, QApplication::UnicodeUTF8));
         actionModificacion->setText(QApplication::translate("Ventas", "M&odificacion de Stock", 0, QApplication::UnicodeUTF8));
-        actionModificacion->setShortcut(QApplication::translate("Ventas", "Alt+O", 0, QApplication::UnicodeUTF8));
+        actionModificacion->setShortcut(QApplication::translate("Ventas", "Alt+3", 0, QApplication::UnicodeUTF8));
         actionVentas->setText(QApplication::translate("Ventas", "&Ventas", 0, QApplication::UnicodeUTF8));
-        actionVentas->setShortcut(QApplication::translate("Ventas", "Alt+V", 0, QApplication::UnicodeUTF8));
+        actionVentas->setShortcut(QApplication::translate("Ventas", "Alt+4", 0, QApplication::UnicodeUTF8));
         actionNuevo->setText(QApplication::translate("Ventas", "&Nuevo Cliente", 0, QApplication::UnicodeUTF8));
-        actionNuevo->setShortcut(QApplication::translate("Ventas", "Alt+N", 0, QApplication::UnicodeUTF8));
+        actionNuevo->setShortcut(QApplication::translate("Ventas", "Alt+5", 0, QApplication::UnicodeUTF8));
         actionEstado_de_Cuenta->setText(QApplication::translate("Ventas", "&Estado de Cuenta", 0, QApplication::UnicodeUTF8));
-        actionEstado_de_Cuenta->setShortcut(QApplication::translate("Ventas", "Alt+T", 0, QApplication::UnicodeUTF8));
+        actionEstado_de_Cuenta->setShortcut(QApplication::translate("Ventas", "Alt+6", 0, QApplication::UnicodeUTF8));
         action_Acerca_de->setText(QApplication::translate("Ventas", "&Acerca de..", 0, QApplication::UnicodeUTF8));
-        action_Acerca_de->setShortcut(QApplication::translate("Ventas", "Alt+Y", 0, QApplication::UnicodeUTF8));
+        action_Acerca_de->setShortcut(QApplication::translate("Ventas", "Alt+7", 0, QApplication::UnicodeUTF8));
         action_Modificar->setText(QApplication::translate("Ventas", "&Modificar Cliente", 0, QApplication::UnicodeUTF8));
-        action_Modificar->setShortcut(QApplication::translate("Ventas", "Alt+Z", 0, QApplication::UnicodeUTF8));
+        action_Modificar->setShortcut(QApplication::translate("Ventas", "Alt+8", 0, QApplication::UnicodeUTF8));
         menuMenu->setTitle(QApplication::translate("Ventas", "&Menu", 0, QApplication::UnicodeUTF8));
         menuAlta_Stock->setTitle(QApplication::translate("Ventas", "Stock", 0, QApplication::UnicodeUTF8));
         menu_Cliente->setTitle(QApplication::translate("Ventas", "&Cliente", 0, QApplication::UnicodeUTF8));
