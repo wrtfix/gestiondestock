@@ -355,10 +355,10 @@ void Ventas::textModelo(QString modelo){
         this->ui->comboProductos->setEditText(query.value(1).toString());
         this->tipo = query.value(2).toBool();
         this->ui->comboModelo->setEditText(query.value(3).toString());
-        qDebug() << query.value(4).toString();
+
         this->ui->textCodigo->setText(query.value(4).toString());
     }
-
+    
 }
 void Ventas::textCodigo(QString codigo){
     QString a;
@@ -455,10 +455,8 @@ void Ventas::buscarProducto(QString nombre){
 void Ventas::agregarCuenta(){
     this->ui->Venta->setEnabled(true);
     QString a;
-    a.append("INSERT INTO `ctacte` (nombre,debe,haber) values ('");
 
-    QSqlQuery q("INSERT INTO `ctacte` (nombre,debe,haber) values ('"+this->ui->comboCliente->currentText()+"',"+this->ui->textCuentaCorriente->text().toFloat()+","+this->ui->textEfectivo->text().toFloat()+")");
-    qDebug() << q.lastError().text() << " " << "INSERT INTO `ctacte` (nombre,debe,haber) values ('"+this->ui->comboCliente->currentText()+"',"+this->ui->textCuentaCorriente->text()+","+this->ui->textEfectivo->text()+")";
+    QSqlQuery q("INSERT INTO `ctacte` (nombre,debe,haber) values ('"+this->ui->comboCliente->currentText()+"',"+this->ui->textCuentaCorriente->text()+","+this->ui->textEfectivo->text()+")");
     this->ui->agregarCtaCte->setEnabled(false);
 }
 void Ventas::agregarCliente(){
