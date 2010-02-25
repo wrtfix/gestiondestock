@@ -40,6 +40,7 @@ public slots:
     void guardarCliente();
     void textCliente(QString);
     void textEstado(QString);
+    void borrarTexto();
 private:
     Ui::Ventas *ui;
     QSqlDatabase db;
