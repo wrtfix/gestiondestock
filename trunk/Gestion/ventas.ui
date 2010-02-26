@@ -96,7 +96,7 @@
           <x>0</x>
           <y>0</y>
           <width>1043</width>
-          <height>575</height>
+          <height>582</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_3">
@@ -419,7 +419,7 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>256</width>
+          <width>243</width>
           <height>526</height>
          </rect>
         </property>
@@ -578,8 +578,8 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>274</width>
-          <height>222</height>
+          <width>198</width>
+          <height>225</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_7">
@@ -772,7 +772,7 @@
           <x>0</x>
           <y>0</y>
           <width>516</width>
-          <height>198</height>
+          <height>191</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_10">
@@ -824,7 +824,7 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>0</y>
+          <y>-17</y>
           <width>297</width>
           <height>237</height>
          </rect>
@@ -964,6 +964,7 @@
  </customwidgets>
  <tabstops>
   <tabstop>textCodigo</tabstop>
+  <tabstop>comboProductos</tabstop>
   <tabstop>comboModelo</tabstop>
   <tabstop>textPrecio</tabstop>
   <tabstop>textCantidad</tabstop>
@@ -975,9 +976,13 @@
   <tabstop>textGasto</tabstop>
   <tabstop>textMotivo</tabstop>
   <tabstop>botonAgregar</tabstop>
-  <tabstop>tableView</tabstop>
+  <tabstop>pushButton_5</tabstop>
   <tabstop>botonGuardar</tabstop>
   <tabstop>botonCerrarCaja</tabstop>
+  <tabstop>checkCuenta</tabstop>
+  <tabstop>textActual</tabstop>
+  <tabstop>textInicial</tabstop>
+  <tabstop>checkServicio</tabstop>
   <tabstop>textCodigoBarra</tabstop>
   <tabstop>comboBox</tabstop>
   <tabstop>textProducto</tabstop>
@@ -986,11 +991,20 @@
   <tabstop>textMinimo</tabstop>
   <tabstop>textMaximo</tabstop>
   <tabstop>textProveedor</tabstop>
-  <tabstop>pushButton</tabstop>
   <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton</tabstop>
   <tabstop>textProducto_2</tabstop>
   <tabstop>tableView_2</tabstop>
   <tabstop>pushButton_3</tabstop>
+  <tabstop>comboEstado</tabstop>
+  <tabstop>estadoDebe</tabstop>
+  <tabstop>estadoHaber</tabstop>
+  <tabstop>estadoTotal</tabstop>
+  <tabstop>scrollArea</tabstop>
+  <tabstop>scrollArea_2</tabstop>
+  <tabstop>webView</tabstop>
+  <tabstop>scrollArea_4</tabstop>
+  <tabstop>scrollArea_3</tabstop>
   <tabstop>comboCliente</tabstop>
   <tabstop>agregarCtaCte</tabstop>
   <tabstop>direccionCliente</tabstop>
@@ -1001,15 +1015,12 @@
   <tabstop>cuitCliente</tabstop>
   <tabstop>mailCliente</tabstop>
   <tabstop>agregarCliente</tabstop>
-  <tabstop>scrollArea</tabstop>
-  <tabstop>checkServicio</tabstop>
-  <tabstop>scrollArea_2</tabstop>
-  <tabstop>webView</tabstop>
-  <tabstop>scrollArea_4</tabstop>
-  <tabstop>textActual</tabstop>
-  <tabstop>scrollArea_3</tabstop>
-  <tabstop>checkCuenta</tabstop>
-  <tabstop>textInicial</tabstop>
+  <tabstop>tableView</tabstop>
+  <tabstop>scrollArea_5</tabstop>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>tableView_3</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>scrollArea_6</tabstop>
  </tabstops>
  <resources/>
  <connections>
@@ -1057,7 +1068,7 @@
     </hint>
     <hint type="destinationlabel">
      <x>1306</x>
-     <y>637</y>
+     <y>635</y>
     </hint>
    </hints>
   </connection>
@@ -1133,7 +1144,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>460</x>
-     <y>461</y>
+     <y>454</y>
     </hint>
     <hint type="destinationlabel">
      <x>333</x>
@@ -1149,7 +1160,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>107</x>
-     <y>460</y>
+     <y>453</y>
     </hint>
     <hint type="destinationlabel">
      <x>-11</x>
@@ -1165,7 +1176,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>362</x>
-     <y>461</y>
+     <y>454</y>
     </hint>
     <hint type="destinationlabel">
      <x>475</x>
@@ -1181,7 +1192,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>590</x>
-     <y>460</y>
+     <y>453</y>
     </hint>
     <hint type="destinationlabel">
      <x>523</x>
@@ -1197,7 +1208,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>1268</x>
-     <y>824</y>
+     <y>817</y>
     </hint>
     <hint type="destinationlabel">
      <x>1345</x>
@@ -1229,7 +1240,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>1286</x>
-     <y>739</y>
+     <y>736</y>
     </hint>
     <hint type="destinationlabel">
      <x>914</x>
@@ -1293,7 +1304,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>946</x>
-     <y>248</y>
+     <y>241</y>
     </hint>
     <hint type="destinationlabel">
      <x>578</x>
@@ -1328,8 +1339,8 @@
      <y>-1</y>
     </hint>
     <hint type="destinationlabel">
-     <x>867</x>
-     <y>264</y>
+     <x>965</x>
+     <y>260</y>
     </hint>
    </hints>
   </connection>
