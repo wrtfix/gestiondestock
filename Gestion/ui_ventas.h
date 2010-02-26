@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'ventas.ui'
 **
-** Created: Thu Feb 25 19:42:24 2010
+** Created: Fri Feb 26 10:59:38 2010
 **      by: Qt User Interface Compiler version 4.5.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -244,7 +244,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1043, 575));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1043, 582));
         gridLayout_3 = new QGridLayout(scrollAreaWidgetContents);
         gridLayout_3->setSpacing(6);
         gridLayout_3->setMargin(11);
@@ -476,7 +476,7 @@ public:
         scrollArea_2->setWidgetResizable(true);
         scrollAreaWidgetContents_2 = new QWidget();
         scrollAreaWidgetContents_2->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_2"));
-        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 256, 526));
+        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 243, 526));
         gridLayout_5 = new QGridLayout(scrollAreaWidgetContents_2);
         gridLayout_5->setSpacing(6);
         gridLayout_5->setMargin(11);
@@ -607,7 +607,7 @@ public:
         scrollArea_3->setWidgetResizable(true);
         scrollAreaWidgetContents_3 = new QWidget();
         scrollAreaWidgetContents_3->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_3"));
-        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 274, 222));
+        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 198, 225));
         gridLayout_7 = new QGridLayout(scrollAreaWidgetContents_3);
         gridLayout_7->setSpacing(6);
         gridLayout_7->setMargin(11);
@@ -775,7 +775,7 @@ public:
         scrollArea_5->setWidgetResizable(true);
         scrollAreaWidgetContents_5 = new QWidget();
         scrollAreaWidgetContents_5->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_5"));
-        scrollAreaWidgetContents_5->setGeometry(QRect(0, 0, 516, 198));
+        scrollAreaWidgetContents_5->setGeometry(QRect(0, 0, 516, 191));
         gridLayout_10 = new QGridLayout(scrollAreaWidgetContents_5);
         gridLayout_10->setSpacing(6);
         gridLayout_10->setMargin(11);
@@ -820,7 +820,7 @@ public:
         scrollArea_6->setWidgetResizable(true);
         scrollAreaWidgetContents_6 = new QWidget();
         scrollAreaWidgetContents_6->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_6"));
-        scrollAreaWidgetContents_6->setGeometry(QRect(0, 0, 297, 237));
+        scrollAreaWidgetContents_6->setGeometry(QRect(0, -17, 297, 237));
         gridLayout_12 = new QGridLayout(scrollAreaWidgetContents_6);
         gridLayout_12->setSpacing(6);
         gridLayout_12->setMargin(11);
@@ -874,7 +874,8 @@ public:
 
         estadoCtecta->setWidget(dockWidgetContents_3);
         Ventas->addDockWidget(static_cast<Qt::DockWidgetArea>(4), estadoCtecta);
-        QWidget::setTabOrder(textCodigo, comboModelo);
+        QWidget::setTabOrder(textCodigo, comboProductos);
+        QWidget::setTabOrder(comboProductos, comboModelo);
         QWidget::setTabOrder(comboModelo, textPrecio);
         QWidget::setTabOrder(textPrecio, textCantidad);
         QWidget::setTabOrder(textCantidad, textHard);
@@ -885,10 +886,14 @@ public:
         QWidget::setTabOrder(textCuentaCorriente, textGasto);
         QWidget::setTabOrder(textGasto, textMotivo);
         QWidget::setTabOrder(textMotivo, botonAgregar);
-        QWidget::setTabOrder(botonAgregar, tableView);
-        QWidget::setTabOrder(tableView, botonGuardar);
+        QWidget::setTabOrder(botonAgregar, pushButton_5);
+        QWidget::setTabOrder(pushButton_5, botonGuardar);
         QWidget::setTabOrder(botonGuardar, botonCerrarCaja);
-        QWidget::setTabOrder(botonCerrarCaja, textCodigoBarra);
+        QWidget::setTabOrder(botonCerrarCaja, checkCuenta);
+        QWidget::setTabOrder(checkCuenta, textActual);
+        QWidget::setTabOrder(textActual, textInicial);
+        QWidget::setTabOrder(textInicial, checkServicio);
+        QWidget::setTabOrder(checkServicio, textCodigoBarra);
         QWidget::setTabOrder(textCodigoBarra, comboBox);
         QWidget::setTabOrder(comboBox, textProducto);
         QWidget::setTabOrder(textProducto, textPrecioUnitario);
@@ -896,12 +901,21 @@ public:
         QWidget::setTabOrder(textDolar, textMinimo);
         QWidget::setTabOrder(textMinimo, textMaximo);
         QWidget::setTabOrder(textMaximo, textProveedor);
-        QWidget::setTabOrder(textProveedor, pushButton);
-        QWidget::setTabOrder(pushButton, pushButton_2);
-        QWidget::setTabOrder(pushButton_2, textProducto_2);
+        QWidget::setTabOrder(textProveedor, pushButton_2);
+        QWidget::setTabOrder(pushButton_2, pushButton);
+        QWidget::setTabOrder(pushButton, textProducto_2);
         QWidget::setTabOrder(textProducto_2, tableView_2);
         QWidget::setTabOrder(tableView_2, pushButton_3);
-        QWidget::setTabOrder(pushButton_3, comboCliente);
+        QWidget::setTabOrder(pushButton_3, comboEstado);
+        QWidget::setTabOrder(comboEstado, estadoDebe);
+        QWidget::setTabOrder(estadoDebe, estadoHaber);
+        QWidget::setTabOrder(estadoHaber, estadoTotal);
+        QWidget::setTabOrder(estadoTotal, scrollArea);
+        QWidget::setTabOrder(scrollArea, scrollArea_2);
+        QWidget::setTabOrder(scrollArea_2, webView);
+        QWidget::setTabOrder(webView, scrollArea_4);
+        QWidget::setTabOrder(scrollArea_4, scrollArea_3);
+        QWidget::setTabOrder(scrollArea_3, comboCliente);
         QWidget::setTabOrder(comboCliente, agregarCtaCte);
         QWidget::setTabOrder(agregarCtaCte, direccionCliente);
         QWidget::setTabOrder(direccionCliente, localidadCliente);
@@ -911,15 +925,12 @@ public:
         QWidget::setTabOrder(ivaCliente, cuitCliente);
         QWidget::setTabOrder(cuitCliente, mailCliente);
         QWidget::setTabOrder(mailCliente, agregarCliente);
-        QWidget::setTabOrder(agregarCliente, scrollArea);
-        QWidget::setTabOrder(scrollArea, checkServicio);
-        QWidget::setTabOrder(checkServicio, scrollArea_2);
-        QWidget::setTabOrder(scrollArea_2, webView);
-        QWidget::setTabOrder(webView, scrollArea_4);
-        QWidget::setTabOrder(scrollArea_4, textActual);
-        QWidget::setTabOrder(textActual, scrollArea_3);
-        QWidget::setTabOrder(scrollArea_3, checkCuenta);
-        QWidget::setTabOrder(checkCuenta, textInicial);
+        QWidget::setTabOrder(agregarCliente, tableView);
+        QWidget::setTabOrder(tableView, scrollArea_5);
+        QWidget::setTabOrder(scrollArea_5, lineEdit);
+        QWidget::setTabOrder(lineEdit, tableView_3);
+        QWidget::setTabOrder(tableView_3, pushButton_4);
+        QWidget::setTabOrder(pushButton_4, scrollArea_6);
 
         menuBar->addAction(menuMenu->menuAction());
         menuBar->addAction(menuAcerca_de->menuAction());

@@ -118,6 +118,7 @@ void Ventas::agregarVenta(){
 
     if (this->verificarValores()){
         QSqlQuery query(a);
+        this->actualizarDatos();
 
     }else
         QMessageBox::critical(this,"Error","Verifique los valores ingresados");
@@ -128,6 +129,8 @@ void Ventas::actualizarDatos(){
 
     this->ui->comboProductos->clear();
     this->ui->comboModelo->clear();
+    this->ui->comboBox->clear();
+    this->ui->comboEstado->clear();
 
     QSqlQuery query("select distinct(producto) from stock");
     while(query.next()){
@@ -441,14 +444,16 @@ void Ventas::buscarProducto(QString nombre){
 void Ventas::agregarCuenta(){
     this->ui->Venta->setEnabled(true);
     QString a;
-    a.append("INSERT INTO `ctacte` (nombre,debe,haber) values ('");
+    a.append("INSERT INTO `ctacte` (nombre,debe,haber,fecha) values ('");
     a.append(this->ui->comboCliente->currentText());
     a.append("',");
     a.append(this->ui->textCuentaCorriente->text());
     a.append(",");
     a.append(this->ui->textEfectivo->text());
+    a.append(",");
+    a.append("NOW()");
     a.append(")");
-    qDebug()<< a;
+//    qDebug()<< a;
     QSqlQuery q(a);
 
     this->ui->agregarCtaCte->setEnabled(false);
@@ -532,7 +537,7 @@ void Ventas::borrarTexto(){
         this->ui->textCodigo->clear();
         this->ui->checkCuenta->setChecked(false);
         this->ui->tableView->show();
-        this->actualizarDatos();
+        //this->actualizarDatos();
 }
 Ventas::~Ventas()
 {
